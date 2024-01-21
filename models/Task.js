@@ -8,6 +8,7 @@ const taskSchema = new mongoose.Schema({
   status: { type: String, enum: ['TODO', 'IN_PROGRESS', 'DONE'], default: 'TODO' },
   user_id: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 });
+console.log("Tasks")
 
 const Task = mongoose.model('Task', taskSchema);
 
